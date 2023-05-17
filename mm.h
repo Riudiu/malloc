@@ -5,11 +5,6 @@ extern void *mm_malloc (size_t size);
 extern void mm_free (void *ptr);
 extern void *mm_realloc(void *ptr, size_t size);
 
-extern void *extend_heap(size_t words);
-extern void *coalesce(void *bp);
-extern void *find_fit(size_t a_size);
-extern void place(void *bp, size_t a_size);
-
 /* 
  * Students work in teams of one or two.  Teams enter their team name, 
  * personal names and login IDs in a struct of this
